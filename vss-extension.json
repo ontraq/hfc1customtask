@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "hfc1customtask",
+    "name": "HFC1 Custom Task",
+    "version": "0.0.1",
+    "publisher": "HealthFirstInc",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "HFC1 Custom task",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "hfc1customtask/icon.png"        
+    },
+    "files": [
+        {
+            "path": "hfc1customtask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "hfc1-custom-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "hfc1customtask"
+            }
+        }
+    ]
+}

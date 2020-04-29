@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "a9557199-6c0b-4872-9c12-f35ec7f68a45",
+    "name": "hfc1customtask",
+    "friendlyName": "HFC1 Custom Task - copy Files over",
+    "description": "copy files over",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "HealthFirstInc",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Echo $(privateKey)",
+    "inputs": [
+        {
+            "name": "privateKey",
+            "type": "string",
+            "label": "Enter Private Key file path",
+            "defaultValue": "~/.ssh/id_rsa",
+            "required": true,
+            "helpMarkDown": "Provide where the private key is stored. "
+        }
+    ],
+    "execution": {
+        "Node10": {
+            "target": "index.js"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+## How this task was created
+
+Follow instructions found in [how to build custom task](https://docs.microsoft.com/en-us/azure/devops/extend/develop/add-build-task?view=azure-devops)
+
+## Publish extension
+
+```
+  tfx extension publish --manifest-globs vss-extension.json --share-with healthfirstinc
+```
